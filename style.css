@@ -101,25 +101,27 @@ h2 {
 	border-radius: 1rem;
 }
 
-.backgroundPortfolio {
+.blueBackground {
 	background-color: #00BBF9;
 }
 
-.outerProjectContainer {
-	border: 0.1rem solid #00F5D4;
+h2#whiteText {
+	margin-left: 40rem;
+	margin-top: 0;
+	padding-top: 3rem;
 }
 
-.innerProjectContainer {
-	display: flex;
-	padding: 2rem 40rem;
-	display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-evenly;
-    align-items: center;
+h3#whiteText {
+	margin-left: 40rem;
+	margin-top: 0;
+	font-size: 1.3rem;
 }
 
-#projectIcons {
-	align-self: flex-end;
+.projectPreview {
+	width: 17.5rem;
+	height: auto;
+	margin-left: 40rem;
+	border-radius: 1rem;
 }
 
 .footerContainer {
