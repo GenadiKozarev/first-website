@@ -7,6 +7,10 @@ html {
   font-family: 'Arya', sans-serif;
 }
 
+body {
+	background-color: #00BBF9;
+}
+
 a {
   text-decoration: none;
   font-size: 1.5rem;
@@ -37,7 +41,7 @@ nav {
 	padding-bottom: 0.3rem;
 }
 
-#whiteText {
+.whiteText {
   color: white;
 }
 
@@ -77,49 +81,56 @@ header {
 	background-color: #00F5D4;
 }
 
-.innerContainerAboutMe {
-	padding: 2rem 40rem;
-	display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 h2 {
 	font-size: 2rem;
 }
 
-.descriptionAboutMe {
-	font-size: 1.3rem;
-	text-align: justify;
-}
-
-.photoOfMe {
-	width: 17.5rem;
-	height: auto;
-	margin-left: 3rem;
-	border-radius: 1rem;
-}
-
-.backgroundPortfolio {
+.blueBackground {
 	background-color: #00BBF9;
 }
 
-.outerProjectContainer {
-	border: 0.1rem solid #00F5D4;
+h2.whiteText {
+	margin-left: 25%;
 }
 
-.innerProjectContainer {
-	display: flex;
-	padding: 2rem 40rem;
-	display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-evenly;
-    align-items: center;
+div.innerContainerAboutMe, div.projectContainer {
+    border: 0.2rem solid #00F5D4;
+	border-radius: 2rem;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
 }
 
-#projectIcons {
-	align-self: flex-end;
+#projectNumber {
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+.descriptionAboutMe, p.whiteText {
+	font-size: 1.3rem;
+	margin: 1rem;
+	text-align: justify;
+}
+
+.photoOfMe, .projectPreview {
+	float: right;
+	width: 17.5rem;
+	height: auto;
+	border-radius: 1rem;
+	margin: 0 1rem;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+.liveIcon {
+	width: 4rem;
+	height: 4rem;
+	margin: 1rem;
 }
 
 .footerContainer {
