@@ -103,9 +103,6 @@ a.portfolioButton:hover {
   scroll-margin-top: 5rem;
 }
 
-@bg: #2d2d37; // Dark blue
-@primary: #fd6b21; // Orange
-
 body { background: @bg;}
 a#arrowEffect { color: white; text-decoration: none; }
 
@@ -177,8 +174,6 @@ div.innerContainerAboutMe, div.projectContainer {
   border-radius: 1rem;
   margin: 1rem;
 }
-
-
 
 .projectNumber {
   font-size: 1.5rem;
