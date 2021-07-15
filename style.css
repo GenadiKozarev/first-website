@@ -16,7 +16,7 @@ nav {
 }
 
 h1 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 a {
@@ -103,13 +103,16 @@ a.portfolioButton:hover {
   scroll-margin-top: 5rem;
 }
 
-body { background: @bg;}
-a#arrowEffect { color: white; text-decoration: none; }
+a#arrowEffect {
+  color: white;
+  text-decoration: none;
+}
 
 .arrow {
   text-align: center;
   margin: 8% 0;
 }
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
