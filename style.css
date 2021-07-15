@@ -22,7 +22,7 @@ h1 {
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: black;
+  color: #000000;
   padding-left: 1rem;
 }
 
@@ -36,22 +36,22 @@ a {
   text-align: center;
   border-radius: 0.5rem;
   background-color: transparent;
-  color: black;
-  border: 0.1rem solid black;
+  color: #000000;
+  border: 0.1rem solid #000000;
   padding: 0.3rem;
 }
 
 .downloadButton:hover, .liveIcon:hover {
-  color: white;
+  color: #FFFFFF;
   box-shadow: 0 0 1.1rem rgba(33,33,33,.2);
 }
 
 a:hover {
-  color: white;
+  color: #FFFFFF;
 }
 
 .whiteText, h1 {
-  color: white;
+  color: #FFFFFF;
 }
 
 .navContainer {
@@ -87,7 +87,7 @@ header {
   margin: 1rem auto;
   padding: 1rem;
   background-color: transparent;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -104,7 +104,7 @@ a.portfolioButton:hover {
 }
 
 a#arrowEffect {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -223,7 +223,7 @@ div.innerContainerAboutMe, div.projectContainer {
 }
 
 .copyright {
-  border-top: 0.3rem #00F5D4 white;
+  border-top: 0.3rem #00F5D4 #FFFFFF;
   background-color: #00BBF9;
   font-size: 1rem;
   text-align: center;
@@ -232,22 +232,25 @@ div.innerContainerAboutMe, div.projectContainer {
 }
 
 @media screen and (max-width: 60rem) {
-	.innerContainerAboutMe {
-		flex-direction: column;
-	}
+  .innerContainerAboutMe {
+	  flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 30rem) {
-	.navContainer {
-		flex-direction: column;
-	}
+  .navContainer {
+	  flex-direction: column;
+  }
 }
 
+/* UNCOMMENT IF YOU WANT TO HIDE THE WHOLE EFFECT
+
 @media screen and (max-width: 100rem) {
-.words, .word-1, .word-2 {
-	display: none;
-	}
+  .words, .word-1, .word-2 {
+	  display: none;
+  }
 }
+*/
 
 /* optional effects below */
 
@@ -265,13 +268,13 @@ div.innerContainerAboutMe, div.projectContainer {
 
 @keyframes move {
   0% {
-    transform: translate(-30%, 0);
+	  transform: translate(-30%, 0);
   }
   50% {
-    text-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.75);
+	  text-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.75);
   }
   100% {
-    transform: translate(30%, 0);
+	  transform: translate(30%, 0);
   }
 }
 
@@ -297,4 +300,17 @@ div.innerContainerAboutMe, div.projectContainer {
 
 .words span:nth-child(7) {
   animation-delay: 3s;
+}
+
+@media screen and (max-width: 100rem) {
+  .words, .word-1 span, .word-2 span {
+	  margin: 0 auto;
+	  font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .words, .word-1 span, .word-2 span {
+	  display: none;
+  }
 }
